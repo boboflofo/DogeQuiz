@@ -12,6 +12,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.8",
+    "html-parse-stringify2": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
