@@ -83,7 +83,7 @@ export default function Trivia(){
           value = {difficulty}
         >
           
-            <MenuItem value="">Any Difficulty</MenuItem>
+            <MenuItem value=" ">Any Difficulty</MenuItem>
             <MenuItem value="&difficulty=easy">Easy</MenuItem>
             <MenuItem value="&difficulty=medium">Medium</MenuItem>
             <MenuItem value="&difficulty=hard">Hard</MenuItem>
