@@ -1,0 +1,243 @@
+.app {
+  height: 100vh;
+  background-color: #A7C7E7;
+  color: #B399D4;
+  display: flex;
+}
+
+.main {
+  flex-basis: 75%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #A7C7E7), url('./assets/dogebackground.jpg');
+  display: flex;
+  flex-direction: column;
+  color: #1a1d30;
+  position:relative;
+}
+
+.main.tabbed{
+  position:relative;
+  flex-basis: 100%;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), #A7C7E7), url('./assets/dogebackground.jpg');
+}
+
+.main.end{
+  display:flex;
+  flex-basis: 100%;
+}
+
+.tabnav{
+  display: flex;
+}
+
+.tab{
+  margin-left: auto;
+}
+
+.main.endbottom{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.money {
+  flex-basis: 25%;
+}
+
+.money.tabbed{
+  display:none;
+}
+
+.navBar{
+  display:flex;
+}
+
+.top{
+  height: 50%;
+  position:relative;
+}
+
+.timer{
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 5px solid white;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 30px;
+  bottom: 0px;
+  left: 80px;
+  
+}
+
+.bottom{
+  height: 50%;
+}
+
+.question {
+  width: 80%;
+  background: linear-gradient(#A7C7E7, #CBC3E3);
+  display:flex;
+  justify-content: center;
+  border: solid white;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  
+}
+
+.answers{
+  display:flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.answer {
+  padding: 10px;
+  flex-basis: 40%;
+  text-align: center;
+  border:2px solid white;
+  border-radius: 15px;
+  margin: 0 10px 20px 10px;
+  background-color: #A7C7E7;
+  cursor: pointer;
+  color: #1a1d30;
+}
+
+.answer:hover,
+.answer.active {
+  background: #CBC3E3;
+}
+
+.answer.correct{
+  animation: correct 4.1s ease-out;
+}
+
+@keyframes correct {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  75%,100%{
+    background-image: url(./assets/happydoge.jpg);
+    background-size:contain;
+    color: green;
+    
+  }
+}
+
+
+
+
+
+.answer.wrong{
+  animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  75%,100%{
+    background-image: url(./assets/mad-doge.png);
+    background-size:contain;
+    color:red;
+  }
+}
+
+.Quiz {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.toggle{
+  margin-left:auto;
+}
+
+.tabContainer {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height: 100%;
+  width: 100%;
+}
+
+.image{
+ height:auto;
+ width:auto;
+ max-width:100px;
+ 
+}
+
+.image-container {
+  height:100px;
+  width:100px;
+  border-radius:50px;
+  overflow:hidden;
+  background-color:black;
+  
+}
+
+.dogeList {
+  list-style: none;
+  width: 100%;
+  padding: 20px;
+}
+
+.dogeListNum {
+  font-size: 14px;
+  margin-right: 10px;
+  
+}
+
+.dogeAmount {
+  font-size: 23px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.dogeListItem{
+  display:flex;
+  align-items:center;
+  padding: 7px;
+  border-radius: 7px;
+  justify-content: center;
+
+}
+
+.dogeListItem.active {
+  background-color: #333366;
+}
+
+.worth{
+  font-size: 10px;
+  margin-left:auto;
+}
+
+
+
+
+
