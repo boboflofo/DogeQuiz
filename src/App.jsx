@@ -143,11 +143,9 @@ function App(props) {
       }
       
       <div className = {tab ? "money tabbed" : "money"}>
-        <div className="topTab">
-        <button className= 'priceCheck' onClick = {togglePrice}>Doge Evaluation</button>
-        </div>
         
         <div className="tabContainer">
+          <button className= 'priceCheck' onClick = {togglePrice}>Doge Evaluation</button>
           <ul className = 'dogeList'>
             {dogeBuilder.map(item => (
               <li className = {questionNum === item.num ? 'dogeListItem active' : 'dogeListItem'}>
