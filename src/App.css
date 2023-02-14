@@ -237,7 +237,7 @@
   margin-left:auto;
 }
 
-@media (max-width: 510px) {
+@media (max-width: 550px) {
   .dogeListNum {
     font-size: 9px;
     margin-right: 9px;
@@ -259,6 +259,61 @@
   .worth{
     font-size: 8px;
     margin-left:auto;
+  }
+
+  .timer{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 25px;
+    bottom: 10px;
+    left: 20px;
+  }
+
+  .question {
+    width: 80%;
+    background: linear-gradient(#A7C7E7, #CBC3E3);
+    display:flex;
+    justify-content: center;
+    border: solid white;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 35px;
+  }
+
+  .main {
+    flex-basis: 75%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #A7C7E7), url('./assets/spacedoge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    color: #1a1d30;
+    position:relative;
+  }
+
+  .main.tabbed{
+    position:relative;
+    flex-basis: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0), #A7C7E7), url('./assets/spacedoge.jpg');
+  }
+
+  .tabContainer{
+    background-color: #9ebbc6;
+  }
+  
+  .app{
+    color:#996888;
+  }
+
+  .dogeListItem.active {
+    background-color: #003554;
   }
 }
 
