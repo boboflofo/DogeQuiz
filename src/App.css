@@ -206,7 +206,7 @@
 .dogeList {
   list-style: none;
   width: 100%;
-  padding: 20px;
+  padding: 0.01px;
 }
 
 .dogeListNum {
