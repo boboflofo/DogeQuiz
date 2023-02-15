@@ -24,7 +24,9 @@
 .main.end{
   display:flex;
   flex-basis: 100%;
+  
 }
+
 
 .tabnav{
   display: flex;
@@ -38,6 +40,14 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+.main.endbottomzero{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/dogesurprise.jpg);
+  background-size: contain;
 }
 
 .money {

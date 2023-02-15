@@ -110,7 +110,7 @@ function App(props) {
         <div className = 'tabnav'> 
         <button className = 'tab' onClick = {toggleTab}>Tab</button>
         </div>
-        <div className = 'main endbottom'>
+        <div className = {questionNum === 1 ? 'main endbottomzero' : 'main endbottom'}>
           <h1>You earned {questionNum=== 1? 'nothing LOL' : (dogePriced[questionNum-2].coins * dogePriceData[0].current_price).toFixed(2)+ ' dollars' }</h1>
           <button onClick = {refreshPage}>Choose New Category</button>
           <button onClick = {() => {setLost(false); setTime(30); setFreeze(()=>1);setQuestionNum(1)}}>Restart</button>
